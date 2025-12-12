@@ -1,0 +1,39 @@
+div{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(71, 57, 59);
+    gap: 10px;
+    flex: 0 1 200px;
+    vertical-align: top;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+}
+article:hover{
+    transform : scale(1.02) translate(2px, 2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+article p {
+    font-size: 0.9rem;
+    color : rgb(189, 173, 173);
+}
+
+article h3:hover{
+    transform : scale(1.05);
+}
+
+article img{
+    width: 92%;
+    height: auto;
+}
