@@ -1,0 +1,108 @@
+/*Corps du site*/
+body {
+    background-color: rgb(189, 173, 173);
+    color: rgb(71, 57, 59);
+}
+/*****************************************/
+
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Haut de la page*/
+header {
+    background: linear-gradient(180deg, rgb(96, 86, 86) 0%, rgb(71, 57, 59) 100%);
+    color : rgb(189, 173, 173);
+    text-align: center;
+    border-bottom: 2px solid rgb(143, 98, 98);
+    padding : 20px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+header nav ul li:hover{
+    transform: scale(1.05);
+}
+
+header img{
+    border-radius:15%;
+    border: solid rgb(143, 98, 98);
+    width: 120px;
+}
+
+header img:hover{
+    transform: scale(1.02) translate(5px, -5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+/*************************************************/
+
+/*liens*/
+.lien {
+    color: rgb(148, 87, 87);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.lien:hover {
+    color: rgb(205, 156, 156);
+    background-color: rgb(97, 76, 79);
+    transform: translate(0, 3px);
+}
+/*********************************/
+
+/*Bas de la page*/
+footer{
+    background: linear-gradient(0deg, rgb(82, 73, 73) 0%, rgb(71, 57, 59) 100%);
+    color: rgb(189, 173, 173);
+    padding-bottom: 2px;
+    padding-left: 5px;
+    
+}
+/**************************************/
+
+/*Separations*/
+hr{
+    border : 0;
+    border-top: 1px solid rgb(143, 98, 98) ;
+    margin: 10px;
+}
+/**********************************************/
+
+/*Titres*/
+.titre {
+    color : rgb(237, 231, 231);
+}
+/********************************/
+
+@media (min-width: 768px) {
+
+    /* --- On restaure la taille de l'image de profil --- */
+    body>header img {
+        width: 150px;
+    }
+
+    /* --- On restaure la navigation horizontale --- */
+    body>header nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+}
