@@ -1,0 +1,36 @@
+/*Main*/
+main{
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main nav {
+    text-align: center;
+}
+
+main nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/****************************/
+
+/*Sections*/
+.section{
+    color :rgb(18, 18, 18);
+    text-decoration: none;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.section:hover{
+    color :rgb(237, 231, 231);
+    background-color: rgb(166, 150, 150);
+}
+/******************************/
