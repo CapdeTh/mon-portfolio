@@ -1,16 +1,17 @@
+@font-face {
+    font-family : RobotoMono;
+    src: url(./../polices/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+
 /*Corps du site*/
 body {
     background-color: rgb(189, 173, 173);
     color: rgb(71, 57, 59);
+    padding: 0;
+    margin: 0;
+    font-family: RobotoMono;
 }
 /*****************************************/
-
-img,
-video,
-iframe {
-    max-width: 100%;
-    height: auto;
-}
 
 /*Haut de la page*/
 header {
@@ -36,20 +37,6 @@ header nav ul {
 
 }
 
-header nav ul li:hover{
-    transform: scale(1.05);
-}
-
-header img{
-    border-radius:15%;
-    border: solid rgb(143, 98, 98);
-    width: 120px;
-}
-
-header img:hover{
-    transform: scale(1.02) translate(5px, -5px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-}
 /*************************************************/
 
 /*liens*/
@@ -64,7 +51,8 @@ header img:hover{
 .lien:hover {
     color: rgb(205, 156, 156);
     background-color: rgb(97, 76, 79);
-    transform: translate(0, 3px);
+    transform: scale(1.05);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 /*********************************/
 
@@ -89,17 +77,29 @@ hr{
 /*Titres*/
 .titre {
     color : rgb(237, 231, 231);
+    text-align: center;
 }
 /********************************/
 
+img:hover{
+    transform: scale(1.02) translate(5px, -5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+
 @media (min-width: 768px) {
 
-    /* --- On restaure la taille de l'image de profil --- */
     body>header img {
         width: 150px;
     }
 
-    /* --- On restaure la navigation horizontale --- */
     body>header nav ul {
         flex-direction: row;
         justify-content: center;
