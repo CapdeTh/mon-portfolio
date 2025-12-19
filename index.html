@@ -10,45 +10,31 @@
 </head>
 
 <body>
-    <header aria-label="En-tete">
+    <header aria-label="En-tete" id = "haut">
         <figure>
-            <img src="./images/ma-photo.jpeg" title= "Je suis vieux" alt="Photo de Frans Roes">
-            <figcaption>Image représentant Frans Roes</figcaption>
-        </figure>        
-        <h1 class = "titre" >Portfolio de Thiméo Capdevila </h1>
+            <a href="./img/ma-photo.jpeg">
+                <img src="./img/ma-photo.jpeg" title= "Je suis vieux" alt="Photo de Frans Roes" >
+            </a>
+            <figcaption>Photo de profil</figcaption>
+        </figure> 
+        <h1 class = "titre" > Portfolio de Frans Roes </h1>
         <nav aria-label="navigation vers les autres pages">
             <ul>
-                <li><a href="./index.html" class = "lien">Accueil</a></li>
-                <li><a href="./projets.html" class = "lien">Mes projets</a></li>
-                <li>hehe</li>
+                <li><a href="#apropos" class = "lien">A propos</a></li>
+                <li><a href="#competences" class = "lien">Compétences</a></li>
+                <li><a href="#projets" class = "lien">Mes projets</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <nav aria-label="navigation dans la page">
-            <a href="#apropos" class = "section">A propos</a>
-            <a href="#competences" class = "section">Compétences</a>
-        </nav>
 
         <section id = "apropos" aria-labelledby="apropos">
             <h2 class = "titre" >A propos :</h2>
 
             <hr>
-
-            <em>
-                "Une étude montre qu'avoir une échelle dans 
-                la maison est 3 fois plus dangereux qu'une arme a feu. 
-                C'est pour ça que j'en ai 3. Au cas ou un fou essayerais de s'introduire
-                avec une échelle."
-            </em>
             <p>
-                Tournent tacherai cervelle et on preparer harmonie. Compassion les age une 
-                executeurs simplement ordonnance rougeatres. Par nos pile tot cher toi jeta.  
-                Extreme roulent du epouser chasses he. En ennemie il chatoie livides. On 
-                surement va francine qu branches encontre. Mes ete pressentit nos renferment 
-                condamnait. Ai et conflit du caillou ou abattit. Saules les venait eau car 
-                crosse que.
+                Auteur Néerlandais originaire de Gaanderen ayant écrit sous le pseudonyme "Herman van Velzen". Il a vécu entre 1902 et 1974; et possède à son actif un grand nombre de nouvelles. En effet, Mr Roes a ecrit pour un journal local chaque semain pendantprès de 40 ans.
             </p>
         </section>
 
@@ -58,14 +44,19 @@
             <hr>
             
             <ul>
-                <li>why my dementia hasn't affected me as a person</li>
-                <li>why my dementia hasn't affected me as a person</li>
-                <li>why my dementia hasn't affected me as a person</li>
-                <li>why my dementia hasn't affected me as a person</li>
-                <li>why my dementia hasn't affected me as a person</li>
-                <li>why my dementia hasn't affected me as a person</li>
-                <li>why my dementia hasn't affected me as a person</li>
+                <li>Horlogerie</li>
+                <li>Théâtre</li>
+                <li>Poésie</li>
+                <li>Écriture</li>
             </ul>
+        </section>
+
+        <section id="projets">
+            <h2 class = "titre" >Mes Projets :</h2>
+            <hr>
+            <nav>
+                <a href="./projets.html" class = "lien">Lien vers ma page Projets</a>
+            </nav>
         </section>
 
     </main>
