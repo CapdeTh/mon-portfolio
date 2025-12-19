@@ -17,20 +17,20 @@ main nav ul {
     padding: 0;
     margin: 20px 0;
 }
-
 /****************************/
 
-/*Sections*/
-.section{
-    color :rgb(18, 18, 18);
-    text-decoration: none;
-    margin: 15px;
-    padding: 5px;
-    border-radius: 10%;
+header img{
+    border-radius:15%;
+    border: solid rgb(143, 98, 98);
+    width: 120px;
 }
 
-.section:hover{
-    color :rgb(237, 231, 231);
-    background-color: rgb(166, 150, 150);
+header img:hover{
+    transform: scale(1.02) translate(5px, -5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
-/******************************/
+
+main .lien:hover{
+    background-color: rgb(206, 195, 195);
+    color: rgb(97, 76, 79);
+}
